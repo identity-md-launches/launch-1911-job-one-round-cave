@@ -1,0 +1,257 @@
+{
+  "new_tests": {
+    "count": 12,
+    "passed": true
+  },
+  "inherited_reconciler_tests": {
+    "count": 17,
+    "passed": true,
+    "method": "byte-identical scratch copy"
+  },
+  "demo": {
+    "comparison": {
+      "complete": true,
+      "equal": false,
+      "format": "csv-reconcile/v1",
+      "ignored_columns": [],
+      "keys": [
+        "item"
+      ],
+      "schema": {
+        "added_columns": [],
+        "removed_columns": []
+      },
+      "summary": {
+        "added": 1,
+        "after_records": 3,
+        "ambiguous_keys": 0,
+        "before_records": 2,
+        "changed": 1,
+        "removed": 0,
+        "unchanged_on_common_columns": 1
+      }
+    },
+    "entries": [
+      {
+        "detail": {
+          "after_record": 3,
+          "before_record": 2,
+          "fields": {
+            "quantity": {
+              "after": "2",
+              "before": "1"
+            }
+          },
+          "key": {
+            "item": "lamp"
+          }
+        },
+        "kind": "changed"
+      }
+    ],
+    "format": "csv-slice/v1",
+    "selection": {
+      "counts": {
+        "added": 0,
+        "ambiguous": 0,
+        "changed": 1,
+        "removed": 0
+      },
+      "kinds": [
+        "changed"
+      ],
+      "match_key": null,
+      "total_entries": 1
+    },
+    "window": {
+      "limit": 1,
+      "next_offset": null,
+      "offset": 0,
+      "omitted_entries": 0,
+      "returned": 1
+    }
+  },
+  "historical_complete_key": {
+    "comparison": {
+      "complete": true,
+      "equal": true,
+      "format": "csv-reconcile/v1",
+      "ignored_columns": [],
+      "keys": [
+        "chain_id",
+        "token_address",
+        "field"
+      ],
+      "schema": {
+        "added_columns": [],
+        "removed_columns": []
+      },
+      "summary": {
+        "added": 0,
+        "after_records": 6,
+        "ambiguous_keys": 0,
+        "before_records": 6,
+        "changed": 0,
+        "removed": 0,
+        "unchanged_on_common_columns": 6
+      }
+    },
+    "entries": [],
+    "format": "csv-slice/v1",
+    "selection": {
+      "counts": {
+        "added": 0,
+        "ambiguous": 0,
+        "changed": 0,
+        "removed": 0
+      },
+      "kinds": [
+        "added",
+        "removed",
+        "changed",
+        "ambiguous"
+      ],
+      "match_key": null,
+      "total_entries": 0
+    },
+    "window": {
+      "limit": 50,
+      "next_offset": null,
+      "offset": 0,
+      "omitted_entries": 0,
+      "returned": 0
+    }
+  },
+  "historical_insufficient_key": {
+    "comparison": {
+      "complete": false,
+      "equal": false,
+      "format": "csv-reconcile/v1",
+      "ignored_columns": [],
+      "keys": [
+        "token_address"
+      ],
+      "schema": {
+        "added_columns": [],
+        "removed_columns": []
+      },
+      "summary": {
+        "added": 0,
+        "after_records": 6,
+        "ambiguous_keys": 2,
+        "before_records": 6,
+        "changed": 0,
+        "removed": 0,
+        "unchanged_on_common_columns": 0
+      }
+    },
+    "entries": [
+      {
+        "detail": {
+          "after": [
+            {
+              "record": 5,
+              "values": {
+                "block_number": "0x18fc1e6",
+                "chain_id": "1",
+                "display_value": "IMD",
+                "expected_symbol": "IMD",
+                "field": "symbol",
+                "raw_value": "IMD",
+                "token_address": "0xd34a99bc0f67ae1bbd63c660e6d0b0dd03e263b7"
+              }
+            },
+            {
+              "record": 6,
+              "values": {
+                "block_number": "0x18fc1e6",
+                "chain_id": "1",
+                "display_value": "18",
+                "expected_symbol": "IMD",
+                "field": "decimals",
+                "raw_value": "18",
+                "token_address": "0xd34a99bc0f67ae1bbd63c660e6d0b0dd03e263b7"
+              }
+            },
+            {
+              "record": 7,
+              "values": {
+                "block_number": "0x18fc1e6",
+                "chain_id": "1",
+                "display_value": "4164418.598629",
+                "expected_symbol": "IMD",
+                "field": "totalSupply",
+                "raw_value": "4164418598629000000000000",
+                "token_address": "0xd34a99bc0f67ae1bbd63c660e6d0b0dd03e263b7"
+              }
+            }
+          ],
+          "before": [
+            {
+              "record": 5,
+              "values": {
+                "block_number": "0x18fc1e6",
+                "chain_id": "1",
+                "display_value": "IMD",
+                "expected_symbol": "IMD",
+                "field": "symbol",
+                "raw_value": "IMD",
+                "token_address": "0xd34a99bc0f67ae1bbd63c660e6d0b0dd03e263b7"
+              }
+            },
+            {
+              "record": 6,
+              "values": {
+                "block_number": "0x18fc1e6",
+                "chain_id": "1",
+                "display_value": "18",
+                "expected_symbol": "IMD",
+                "field": "decimals",
+                "raw_value": "18",
+                "token_address": "0xd34a99bc0f67ae1bbd63c660e6d0b0dd03e263b7"
+              }
+            },
+            {
+              "record": 7,
+              "values": {
+                "block_number": "0x18fc1e6",
+                "chain_id": "1",
+                "display_value": "4164418.598629",
+                "expected_symbol": "IMD",
+                "field": "totalSupply",
+                "raw_value": "4164418598629000000000000",
+                "token_address": "0xd34a99bc0f67ae1bbd63c660e6d0b0dd03e263b7"
+              }
+            }
+          ],
+          "key": {
+            "token_address": "0xd34a99bc0f67ae1bbd63c660e6d0b0dd03e263b7"
+          }
+        },
+        "kind": "ambiguous"
+      }
+    ],
+    "format": "csv-slice/v1",
+    "selection": {
+      "counts": {
+        "added": 0,
+        "ambiguous": 2,
+        "changed": 0,
+        "removed": 0
+      },
+      "kinds": [
+        "ambiguous"
+      ],
+      "match_key": null,
+      "total_entries": 2
+    },
+    "window": {
+      "limit": 1,
+      "next_offset": 1,
+      "offset": 0,
+      "omitted_entries": 1,
+      "returned": 1
+    }
+  },
+  "fresh_chain_read": false
+}

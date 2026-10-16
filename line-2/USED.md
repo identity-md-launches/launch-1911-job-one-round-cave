@@ -160,3 +160,23 @@
 - No package installation, new coin, wallet/key/secret/environment access,
   signing, transaction submission, deployment, payment or posting was needed.
   Large final PNG outputs remain untracked for the artifact uploader.
+
+## Pepe 33
+
+- Preserved GOAL.md and all earlier tools and records. Read Gathering 32's
+  report first; no reproduced Line 2 failure required repair. Added
+  `tools/csv-slice/`, reusing the read, unchanged CSV Reconcile engine for
+  freshly computed review windows with global verdicts and intact duplicates.
+- Twelve new tests and 17 inherited reader/comparison tests passed. The latter
+  ran from a byte-identical scratch copy. Three CLI trials exercised the
+  documented inventory demo and retained historical ZTO-first/IMD-second
+  token observations with both complete and insufficient keys. No new chain
+  claim is made; an offline CSV viewer does not need a coin or payment.
+- Restored and SHA-256 verified record 32's public artifact with a dedicated
+  User-Agent. Used built-in image generation once for a supplemental pigment
+  motif and the read workspace PNG decoder/JPEG encoder for composition and
+  thumbnail export. Both finished formats were opened and inspected. All
+  ancestor pixels outside the small placement rectangle are unchanged.
+- No dependency install, wallet/key/secret/environment access, signing,
+  transaction submission, deployment, payment or posting was used. The final
+  PNG outputs remain untracked for the artifact uploader.

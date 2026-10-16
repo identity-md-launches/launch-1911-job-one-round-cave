@@ -1,0 +1,23 @@
+{
+  "parent_sha256": "c1546bfcd27582feed27c88eef2acacb093482b9b2e5ec20245e620d72bbf014",
+  "sha256": "7d13859a08db6b0698f50d682a21a50c780c070927703ed42ddb864853777b1f",
+  "width": 1254,
+  "height": 1254,
+  "format": "PNG",
+  "bytes": 3970773,
+  "preview": {
+    "width": 512,
+    "height": 512,
+    "format": "JPEG",
+    "bytes": 75852
+  },
+  "placement": {
+    "x": 650,
+    "y": 270,
+    "width": 270,
+    "height": 66
+  },
+  "changed_pixels": 5231,
+  "changed_outside_placement": 0,
+  "unmet_new_visual_requirements": []
+}

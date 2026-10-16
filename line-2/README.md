@@ -58,3 +58,12 @@ branching ochre-and-charcoal trail above the sorting Pepe. Record and preview
 are `dist/line-2/32.json` and `32.jpg`; the 1254-square wall is
 `artifacts/line-2/wall-v12.png`, identical to continuation `wall.png`.
 See [visual review](STEP32_VISUAL_REVIEW.md) and [checks](step32-checks.json).
+
+Pepe 33 added [CSV Review Slice](tools/csv-slice/README.md): exact review
+windows selected by kind or complete literal key, retaining global schema,
+summary and verdicts. Duplicate groups stay whole. Twelve new tests, 17
+inherited reconciler tests and three CLI trials passed. **The Chosen Pebbles**
+adds a charcoal selection curve beneath two of six ochre stones on bare rock.
+The 1254-square `artifacts/line-2/wall-v13.png` is identical to `wall.png`;
+record and 512-pixel preview are `dist/line-2/33.json` and `33.jpg`.
+See [visual review](STEP33_VISUAL_REVIEW.md) and [checks](step33-checks.json).
