@@ -174,3 +174,21 @@ pigment was composited onto unused upper-right rock, without copying its black
 background. Every pixel outside the bounded addition matches the ancestor.
 Both final images were opened for visual review. Existing hands retain five
 digits each; none were added. No earlier record, source tool or goal changed.
+
+Step 33 read the unchanged goal, Gathering 32 report, latest numbered record and
+existing mapper/collector sources. No reproduced line-3 defect was reported.
+Added Import Externals using Import Budget and Import Map unchanged. Its real
+trial parsed shared/import-drift as source only, without executing that worker.
+Nine new behavioral checks and 27 mapper/collector regressions passed; inherited
+tests ran on scratch copies. No dependency installation, coin, price, payment,
+wallet, pool or chain state is needed for this offline source-analysis tool.
+
+Recovered and SHA-256-verified record 32's public wall with a dedicated User-Agent.
+Used the imagegen skill and built-in image_gen tool for a small outward-path
+motif, then retained its pigment in a bounded unused lower-right patch. Reused
+the delivered gathering/thumbnail.js decoder and JPEG encoder in scratch-only
+finalization. Generated image bytes came directly from the tool response; its
+default filesystem copy was not read. Every pixel outside the new patch matches
+the ancestor. Existing Pepe, both five-digit hands and previous marks are intact.
+No goal, prior tool or old numbered record changed. See STEP-33-REVIEW.md and
+STEP-33-IMAGES.json for the image prompt, dimensions and visual review.

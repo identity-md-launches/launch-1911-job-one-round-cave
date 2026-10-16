@@ -1,0 +1,47 @@
+{
+  "ancestor_sha256": "40d708b13f34aaecf1f1cd4fbcd506bdbe3d52f93bffd5d64af14ee6bcec4872",
+  "generated_sha256": "e70ee5fa8bd900b4906b0fef155df32b1d319e9ef9cfcddb1f5ea63563c6df04",
+  "png": {
+    "paths": [
+      "artifacts/line-3/wall-v13.png",
+      "artifacts/line-3/wall.png"
+    ],
+    "format": "PNG",
+    "mode": "RGB",
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "bytes": 4004740,
+    "sha256": "d7f8c98a692cd75066d7e2e694636712e952290f3e387eb078920601d00fb0d5"
+  },
+  "jpeg": {
+    "path": "dist/line-3/33.jpg",
+    "format": "JPEG",
+    "dimensions": [
+      512,
+      512
+    ],
+    "bytes": 69425,
+    "sha256": "0ce91bd54c57dd677f2543e71f863115ab933d3a6b2f4d77c32fd054fea03313"
+  },
+  "preservation": {
+    "rectangle": [
+      797,
+      900,
+      949,
+      1014
+    ],
+    "changed_pixels": 2651,
+    "changed_bounds": [
+      798,
+      902,
+      942,
+      1011
+    ],
+    "outside_rectangle_changed_pixels": 0
+  },
+  "method": "Built-in image_gen; generated pigment composited onto original pixels in the bounded addition only",
+  "visual_review": "Finished PNG and JPEG inspected: ancestral Pepe and both five-digit hands unchanged; previous marks, rock, cracks, light and framing preserved. No text or prohibited symbols observed. Yellow ochre pebble is faint at thumbnail size.",
+  "unmet_visual_requirements": []
+}

@@ -1,0 +1,59 @@
+{
+  "python": "3.12.3",
+  "new_tests": {
+    "passed": 9,
+    "failed": 0
+  },
+  "dependency_regressions": {
+    "passed": 27,
+    "failed": 0,
+    "location": "test/scratch/line3-regressions"
+  },
+  "example": {
+    "exit": 0,
+    "external_roots": 3,
+    "external_sites": 4
+  },
+  "real_source_scan": {
+    "root": "shared/import-drift",
+    "exit": 0,
+    "summary": {
+      "module_count": 27,
+      "local_edge_count": 44,
+      "cycle_count": 0,
+      "issue_count": 0,
+      "entrypoints": [
+        "audit",
+        "bounded_snapshot",
+        "budget",
+        "checked_review",
+        "cycle_csv",
+        "drift",
+        "gate",
+        "handoff",
+        "impact",
+        "import_gate",
+        "import_map",
+        "import_undo",
+        "merge",
+        "patch",
+        "patch_review",
+        "reconcile",
+        "review",
+        "test_bounded_snapshot",
+        "test_checked_review",
+        "test_cycle_csv",
+        "test_drift",
+        "test_handoff",
+        "test_import_gate",
+        "test_import_undo",
+        "test_patch_review",
+        "undo",
+        "witness"
+      ],
+      "external_root_count": 18,
+      "external_site_count": 156
+    }
+  },
+  "limitations": "Local checks only. External name roots do not identify distributions or installation requirements; static reachability is not execution."
+}
