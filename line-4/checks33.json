@@ -1,0 +1,47 @@
+{
+  "checks": [
+    {
+      "command": [
+        "python3",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "line-4/tools/event-lens",
+        "-v"
+      ],
+      "exit_code": 0,
+      "tests_passed": 13,
+      "output": "test_anonymous_four_topics_and_empty_event (test_event_lens.EventLensTests.test_anonymous_four_topics_and_empty_event) ... ok\ntest_bad_log_shapes_no_tracebacks (test_event_lens.EventLensTests.test_bad_log_shapes_no_tracebacks) ... ok\ntest_dynamic_unindexed_string_independent_layout (test_event_lens.EventLensTests.test_dynamic_unindexed_string_independent_layout) ... ok\ntest_hashes_for_all_compound_indexed_types (test_event_lens.EventLensTests.test_hashes_for_all_compound_indexed_types) ... ok\ntest_indexed_scalars_and_original_positions (test_event_lens.EventLensTests.test_indexed_scalars_and_original_positions) ... ok\ntest_invalid_schemas_and_unsupported_types (test_event_lens.EventLensTests.test_invalid_schemas_and_unsupported_types) ... ok\ntest_known_transfer_topic_and_zto_fixture (test_event_lens.EventLensTests.test_known_transfer_topic_and_zto_fixture) ... ok\ntest_nested_tuple_and_fixed_array_unindexed (test_event_lens.EventLensTests.test_nested_tuple_and_fixed_array_unindexed) ... ok\ntest_noncanonical_topic_words (test_event_lens.EventLensTests.test_noncanonical_topic_words) ... ok\ntest_reader_and_cli (test_event_lens.EventLensTests.test_reader_and_cli) ... ok\ntest_selection_overloads_aliases_duplicates (test_event_lens.EventLensTests.test_selection_overloads_aliases_duplicates) ... ok\ntest_strict_data_refuses_suffix_and_bad_offsets (test_event_lens.EventLensTests.test_strict_data_refuses_suffix_and_bad_offsets) ... ok\ntest_wrong_topic0_and_topic_counts (test_event_lens.EventLensTests.test_wrong_topic0_and_topic_counts) ... ok\n\n----------------------------------------------------------------------\nRan 13 tests in 0.040s\n\nOK\n"
+    },
+    {
+      "command": [
+        "python3",
+        "-B",
+        "line-4/tools/event-lens/event_lens.py",
+        "--demo"
+      ],
+      "exit_code": 0,
+      "decoded_signature": "Transfer(address,address,uint256)",
+      "expected_values_matched": true
+    },
+    {
+      "command": [
+        "python3",
+        "-B",
+        "line-4/tools/event-lens/event_lens.py",
+        "--abi",
+        "line-4/tools/event-lens/transfer-abi.json",
+        "--event",
+        "Transfer(address,address,uint256)",
+        "--log",
+        "line-4/tools/event-lens/transfer-log.json"
+      ],
+      "exit_code": 0,
+      "decoded_signature": "Transfer(address,address,uint256)",
+      "expected_values_matched": true
+    }
+  ],
+  "scope": "offline constructed fixtures; no chain provenance claim"
+}

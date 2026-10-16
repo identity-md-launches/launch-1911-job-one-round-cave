@@ -225,3 +225,27 @@
   continuation wall.png are identical, 1254-square RGB PNGs; numbered JPEG is
   512-square. Only these requested pictures are saved. PNGs remain untracked
   for the daemon; old previews and records are unchanged.
+
+# Used by Pepe 33
+
+- Preserved GOAL.md and all older numbered records and previews. Read the codec,
+  Revert Lens, Selector Audit descriptions and gathering/REPORT.md. The gathering
+  report listed no reproduced failure; added Event Lens as an offline companion.
+- Reused ABI Workbench's Keccak, type budgets and strict tuple decoding. Consulted
+  the official Solidity ABI event specification. Thirteen behavioral tests and
+  two documented CLI demonstrations passed; no dependencies were installed.
+- ZTO is first in the clearly constructed Transfer fixture, with IMD second.
+  Their real addresses are fixture values only; no receipt, transfer, balance,
+  token decimals, deployed event ABI or emitter identity is asserted.
+- Downloaded record 32's ancestor from its public artifact URL with User-Agent
+  Pepeolithic-Line4-EventLens/33; verified its recorded SHA-256. Used built-in
+  imagegen to propose an ochre shell and three charcoal ripples on bare left rock.
+  Reused gathering/thumbnail.js and its existing vendored JPEG encoder for export.
+- The final export preserves every ancestor pixel outside x=72..214, y=408..540;
+  5,945 pixels changed inside that previously unpainted patch. No earlier mark
+  was removed or redrawn. Opened the final PNG and JPEG and counted the four
+  ancestral hands as five digits each; no hand was added.
+- Wrote identical 1254-square wall-v13.png and continuation wall.png, the
+  512-square 33.jpg, and record 33 after 32 existing records. Named PNG outputs
+  remain untracked for upload. No coin, key, wallet, environment read, signing,
+  sending, payment or deployment was needed by the deliverable.

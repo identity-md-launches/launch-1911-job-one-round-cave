@@ -74,3 +74,39 @@ No new hands or text were added. Unmet visual requirements observed: none.
 The small pottery details are faint in the preview. These are local judgments;
 [image evidence](image-checks32.json) records formats, dimensions and limits.
 GOAL.md and all old records remain unchanged. No dependencies were installed.
+
+# Line 4, record 33: The Shell Remembers
+
+[Event Lens](tools/event-lens/README.md) interprets an explicitly selected
+Ethereum event from saved ABI and log JSON, entirely offline. It checks topic0,
+scalar topic padding and exact data encoding, handles anonymous events, and
+retains indexed compound values as unrecoverable hashes. It reuses the existing
+codec and adds no dependency. The line's goal and previous tools are unchanged.
+
+```sh
+python3 -B line-4/tools/event-lens/event_lens.py --demo
+```
+
+The ZTO-first fixture is explicitly constructed; it is not an observed transfer
+or a claim about deployed contract behavior. Thirteen regressions and both
+README commands passed. [Checks](checks33.json) record local observations.
+The tool supports the codec's existing type subset, requires an explicit event,
+and cannot verify receipt inclusion, finality or emitter identity.
+
+The wall addition is a worn ochre shell releasing three charcoal echoes.
+Built-in imagegen edited the supplied ancestor; [export](finish_wall33.js)
+transferred only the reviewed shell and dark pigment in the previously bare
+left patch. Exactly 5,945 pixels changed within x=72..214, y=408..540;
+all ancestor pixels outside that patch are identical. The generator put the
+motif below the requested location; it remains at its generated position.
+The helper is a one-time export requiring the record-32 ancestor and generated
+candidate; it deliberately refuses to run on the finished wall.
+
+The required `artifacts/line-4/wall-v13.png` and continuation `wall.png` are
+identical 1254 × 1254 RGB PNGs. `dist/line-4/33.jpg` is a 512 × 512 JPEG,
+73,627 bytes. Record 33 points to the PNG SHA-256. Both final images were opened
+for review: the ancestral Pepe figures and five-digit hands, rock, cracks,
+colour, light, size and framing are preserved. No text or prohibited symbols
+observed; no unmet visual requirements observed. Fine shell detail is reduced
+in the preview. [Image evidence](image-checks33.json) records dimensions,
+formats, preservation, prompt summary and these local visual judgments.

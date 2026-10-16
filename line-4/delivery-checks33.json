@@ -1,0 +1,25 @@
+{
+  "goal_byte_identical": true,
+  "older_records_unchanged": true,
+  "new_record": 33,
+  "record_matches_png_hash": true,
+  "png_outputs_identical": true,
+  "png_outputs_untracked": true,
+  "new_or_modified_nonartifact_files_under_100KB": true,
+  "changed_source_paths": [
+    "line-4/README.md",
+    "line-4/USED.md",
+    "dist/line-4/33.jpg",
+    "dist/line-4/33.json",
+    "line-4/checks33.json",
+    "line-4/finish_wall33.js",
+    "line-4/image-checks33.json",
+    "line-4/tools/event-lens/README.md",
+    "line-4/tools/event-lens/event_lens.py",
+    "line-4/tools/event-lens/test_event_lens.py",
+    "line-4/tools/event-lens/transfer-abi.json",
+    "line-4/tools/event-lens/transfer-log.json"
+  ],
+  "scope_check": "only allowed paths changed",
+  "local_check_not_external_certification": true
+}

@@ -1,0 +1,68 @@
+{
+  "ancestor_sha256": "265a5f8eaada0ddf7349a4bcc658b6aec3d4c587d9283329f47f9eeb6621fd0a",
+  "generated_sha256": "a26599288062bc189ce8ac8d83b18578e2660925c585eaa01d49883c60468763",
+  "png": {
+    "path": "artifacts/line-4/wall-v13.png",
+    "format": "PNG",
+    "mode": "RGB",
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "bytes": 4087703,
+    "sha256": "4255123b1ef68ca9fde6f5542c85da3cad746dc07a263488b7e778758b73e440"
+  },
+  "jpeg": {
+    "path": "dist/line-4/33.jpg",
+    "format": "JPEG",
+    "dimensions": [
+      512,
+      512
+    ],
+    "bytes": 73627,
+    "sha256": "15e623e928fc82bc3b310c077a717085d7ced7b71d621af028ef115f51cb2b34"
+  },
+  "preservation": {
+    "rectangle": [
+      72,
+      408,
+      214,
+      540
+    ],
+    "changed_pixels": 5945,
+    "changed_bounds": [
+      79,
+      409,
+      213,
+      535
+    ],
+    "outside_rectangle_changed_pixels": 0
+  },
+  "visual_review_required": true,
+  "visual_review_completed": true,
+  "unmet_visual_requirements": [],
+  "visual_review": {
+    "reviewed": [
+      "artifacts/line-4/wall-v13.png",
+      "dist/line-4/33.jpg"
+    ],
+    "observations": [
+      "Both ancestral Pepe figures remain unchanged, with wide mouths and heavy-lidded eyes.",
+      "All four visible hands retain four fingers and one thumb each; no hands added.",
+      "An ochre shell and three charcoal ripples occupy the previously bare left patch.",
+      "Warm rough rock, cracks, torchlight, square framing and prior marks remain.",
+      "No letters, numbers, captions, signatures, logos or prohibited symbols observed."
+    ],
+    "limitations": [
+      "Visual review is a local judgment, not external certification.",
+      "Fine shell texture is reduced in the 512-pixel preview."
+    ]
+  },
+  "generation": {
+    "tool": "built-in image_gen.imagegen",
+    "mode": "edit",
+    "prompt_summary": "Preserve the supplied 1254-square ancestral cave and all marks; add only a small worn ochre shell and three charcoal ripples on bare rock left of the large Pepe, earth pigments, no writing, no new hands.",
+    "actual_placement": "Slightly below requested position; preserved in the generated position.",
+    "export": "Only reviewed shell silhouette and darker pigment inside the preservation rectangle were transferred onto ancestor pixels."
+  }
+}
