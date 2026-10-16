@@ -1,0 +1,98 @@
+{
+  "format": "csv-slice/v1",
+  "comparison": {
+    "format": "csv-reconcile/v1",
+    "keys": [
+      "url",
+      "hop"
+    ],
+    "ignored_columns": [],
+    "equal": false,
+    "complete": true,
+    "schema": {
+      "added_columns": [],
+      "removed_columns": []
+    },
+    "summary": {
+      "before_records": 1,
+      "after_records": 1,
+      "added": 0,
+      "removed": 0,
+      "changed": 1,
+      "unchanged_on_common_columns": 0,
+      "ambiguous_keys": 0
+    }
+  },
+  "selection": {
+    "kinds": [
+      "added",
+      "removed",
+      "changed",
+      "ambiguous"
+    ],
+    "match_key": null,
+    "counts": {
+      "added": 0,
+      "removed": 0,
+      "changed": 1,
+      "ambiguous": 0
+    },
+    "total_entries": 1
+  },
+  "window": {
+    "offset": 0,
+    "limit": 1,
+    "returned": 1,
+    "omitted_entries": 0,
+    "next_offset": null
+  },
+  "entries": [
+    {
+      "kind": "changed",
+      "detail": {
+        "key": {
+          "url": "https://api.imd.fun/launches",
+          "hop": "0"
+        },
+        "before_record": 2,
+        "after_record": 2,
+        "fields": {
+          "body_bytes": {
+            "before": "126215",
+            "after": "126226"
+          },
+          "capture_complete": {
+            "before": "",
+            "after": "true"
+          },
+          "declared_bytes": {
+            "before": "",
+            "after": "126226"
+          },
+          "findings": {
+            "before": "[{\"code\":\"missing_headers\",\"detail\":\"Capture predates framing header evidence; absence cannot be inferred.\",\"state\":\"unknown\"}]",
+            "after": "[{\"code\":\"length_match\",\"detail\":\"Captured bytes equal declared length.\",\"state\":\"consistent\"}]"
+          },
+          "mode": {
+            "before": "unknown",
+            "after": "content-length"
+          },
+          "outcome": {
+            "before": "unknown",
+            "after": "consistent"
+          },
+          "overall_outcome": {
+            "before": "unknown",
+            "after": "consistent"
+          },
+          "report_sha256": {
+            "before": "ca03ba18a3dd5cc514a3d128c2daa70008728ba3f5d9bdff239f6e1448266ed3",
+            "after": "ccccfed56f58224e02e06508c70d19f376a444514597c7343015cb3650916fab"
+          }
+        }
+      }
+    }
+  ],
+  "handoff": "http-framing-review/v1",
+  "scope": "Saved, unauthenticated GET evidence only. A framing match does not establish payload validity or current endpoint health. Windows limit entries, not bytes; ambiguous groups stay whole. Use immutable inputs and identical options while paging. No network or writes are performed."
+}

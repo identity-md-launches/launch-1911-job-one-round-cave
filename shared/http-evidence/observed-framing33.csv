@@ -1,0 +1,2 @@
+url,hop,overall_outcome,source_ok,status,outcome,mode,capture_complete,declared_bytes,body_bytes,findings,report_sha256
+https://api.imd.fun/launches,0,consistent,true,200,consistent,content-length,true,126226,126226,"[{""code"":""length_match"",""detail"":""Captured bytes equal declared length."",""state"":""consistent""}]",fa76bcfa1d0992fb1bc9ddaa6df317f2e8e6b30323bfc2da63d81d22aa5fa1d1

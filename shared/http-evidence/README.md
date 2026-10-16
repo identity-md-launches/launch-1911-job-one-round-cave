@@ -117,3 +117,61 @@ limits. Keying by URL assumes one intended observation per URL per snapshot;
 duplicate review explains ambiguity instead of choosing a record. Source
 fingerprints establish byte identity, not authenticity. Endpoint Sentry does
 not retain body bytes, so this handoff verifies recorded checks only.
+
+## Gathering 33: framing evidence with review windows
+
+`framing_review.py` connects Line 1's Framing Lens with Line 2's CSV Review
+Slice. It exports one row per `(url, hop)` from a saved GET report, retaining
+the overall and per-hop framing verdicts, source health, complete-capture
+evidence, declared/captured sizes, findings and report fingerprint. The
+comparison keeps the full global verdict and schema while selecting a small
+window of exact changes. Nothing is fetched or modified by this tool.
+
+One command anyone can run offline from the repository root:
+
+```sh
+python3 -B shared/http-evidence/framing_review.py compare shared/http-evidence/observed-framing-unknown33.csv shared/http-evidence/observed-framing-live33.csv --limit 1
+```
+
+Tried: exit **1**, one changed URL/hop. The older real public capture has no
+framing-header field, so its verdict is `unknown`. The separately captured
+2026-10-16 01:22:38 UTC observation reports HTTP 200, strict JSON and 126,226
+bytes matching Content-Length. This is a change in available evidence, not
+proof the older response had broken framing. The source is retained at
+`../../gathering/live-framing33-source.json`; no response body is saved.
+Comparing the newer Line 1 framing fixture with this separate public capture
+finds only a changed report fingerprint: framing values are the same. The
+adjacent `observed-framing-review33.json` records that exact result.
+
+To export or select your own saved evidence:
+
+```sh
+python3 -B shared/http-evidence/framing_review.py snapshot line-1/tools/framing-lens/observed-live.json
+python3 -B shared/http-evidence/framing_review.py compare shared/http-evidence/observed-framing33.csv shared/http-evidence/observed-framing-live33.csv --kind changed --offset 0 --limit 1
+```
+
+Snapshots exit 0 only for `consistent`, 1 for `unknown` or `issue`, and 2 on
+invalid input. A watchdog with no attributable HTTP hops refuses export
+instead of inventing a URL or an empty successful snapshot. Missing byte
+counts and complete-capture evidence stay empty, never zero or false.
+Comparisons exit 0 only for full equality, 1 for any difference/ambiguity,
+and 2 for invalid input. `--match-key` requires exactly string `url` and `hop`
+fields; repeat `--kind` for added, removed, changed or ambiguous groups.
+An empty page or excluded duplicate group never changes the global verdict.
+Duplicate groups retain every occurrence without pairing, even at limit 1.
+
+The exact CSV header and canonical hop indices 0..10 are required. Tables
+retain the engine's 16 MiB / 100,000-record limits and are held in memory;
+limit bounds entries, not bytes or processing time. Use unchanged input
+bytes/options between pages. CSV content is supplied evidence, not a signed
+or authenticated report. A consistent framing verdict does not establish
+payload validity, application success or current endpoint health. Runtime:
+Python 3.10+ standard library only; keep this whole folder together.
+
+`framing_lens.py` is byte-identical to Line 1 Step 33. `review_slice.py` is
+Line 2 Step 33's slicer with only its reconciler import path adapted. Eight
+new cross-line tests pass, including unknown and redirect evidence, global
+ambiguity behind a filter, intact groups, pagination, and clean refusals.
+Seven saved-evidence demonstrations can be reproduced with
+`python3 -B gathering/try_round33.py`. Synthetic cases occur only in tests;
+the retained snapshots above come from real anonymous public observations.

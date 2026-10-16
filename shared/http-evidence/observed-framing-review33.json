@@ -1,0 +1,70 @@
+{
+  "format": "csv-slice/v1",
+  "comparison": {
+    "format": "csv-reconcile/v1",
+    "keys": [
+      "url",
+      "hop"
+    ],
+    "ignored_columns": [],
+    "equal": false,
+    "complete": true,
+    "schema": {
+      "added_columns": [],
+      "removed_columns": []
+    },
+    "summary": {
+      "before_records": 1,
+      "after_records": 1,
+      "added": 0,
+      "removed": 0,
+      "changed": 1,
+      "unchanged_on_common_columns": 0,
+      "ambiguous_keys": 0
+    }
+  },
+  "selection": {
+    "kinds": [
+      "added",
+      "removed",
+      "changed",
+      "ambiguous"
+    ],
+    "match_key": null,
+    "counts": {
+      "added": 0,
+      "removed": 0,
+      "changed": 1,
+      "ambiguous": 0
+    },
+    "total_entries": 1
+  },
+  "window": {
+    "offset": 0,
+    "limit": 1,
+    "returned": 1,
+    "omitted_entries": 0,
+    "next_offset": null
+  },
+  "entries": [
+    {
+      "kind": "changed",
+      "detail": {
+        "key": {
+          "url": "https://api.imd.fun/launches",
+          "hop": "0"
+        },
+        "before_record": 2,
+        "after_record": 2,
+        "fields": {
+          "report_sha256": {
+            "before": "fa76bcfa1d0992fb1bc9ddaa6df317f2e8e6b30323bfc2da63d81d22aa5fa1d1",
+            "after": "ccccfed56f58224e02e06508c70d19f376a444514597c7343015cb3650916fab"
+          }
+        }
+      }
+    }
+  ],
+  "handoff": "http-framing-review/v1",
+  "scope": "Saved, unauthenticated GET evidence only. A framing match does not establish payload validity or current endpoint health. Windows limit entries, not bytes; ambiguous groups stay whole. Use immutable inputs and identical options while paging. No network or writes are performed."
+}

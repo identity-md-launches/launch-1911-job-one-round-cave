@@ -1,0 +1,123 @@
+{
+  "round": 33,
+  "ok": true,
+  "results": [
+    {
+      "name": "Historical real framing snapshot",
+      "command": [
+        "/usr/bin/python3",
+        "-B",
+        "shared/http-evidence/framing_review.py",
+        "snapshot",
+        "line-1/tools/framing-lens/observed-live.json"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "passed": true,
+      "stdout_bytes": 391,
+      "stderr": ""
+    },
+    {
+      "name": "Separate fresh public capture framing snapshot",
+      "command": [
+        "/usr/bin/python3",
+        "-B",
+        "shared/http-evidence/framing_review.py",
+        "snapshot",
+        "gathering/live-framing33-source.json"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "passed": true,
+      "stdout_bytes": 391,
+      "stderr": ""
+    },
+    {
+      "name": "Older capture lacks framing evidence",
+      "command": [
+        "/usr/bin/python3",
+        "-B",
+        "shared/http-evidence/framing_review.py",
+        "snapshot",
+        "line-1/tools/endpoint-doctor/observed-live.json"
+      ],
+      "exit_code": 1,
+      "expected_exit_code": 1,
+      "passed": true,
+      "stdout_bytes": 400,
+      "stderr": ""
+    },
+    {
+      "name": "Equal framing evidence",
+      "command": [
+        "/usr/bin/python3",
+        "-B",
+        "shared/http-evidence/framing_review.py",
+        "compare",
+        "shared/http-evidence/observed-framing33.csv",
+        "shared/http-evidence/observed-framing33.csv",
+        "--limit",
+        "1"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "passed": true,
+      "stdout_bytes": 1208,
+      "stderr": ""
+    },
+    {
+      "name": "Historical-to-fresh exact evidence change",
+      "command": [
+        "/usr/bin/python3",
+        "-B",
+        "shared/http-evidence/framing_review.py",
+        "compare",
+        "shared/http-evidence/observed-framing33.csv",
+        "shared/http-evidence/observed-framing-live33.csv",
+        "--limit",
+        "1"
+      ],
+      "exit_code": 1,
+      "expected_exit_code": 1,
+      "passed": true,
+      "stdout_bytes": 1677,
+      "stderr": ""
+    },
+    {
+      "name": "Unknown older framing stays visible",
+      "command": [
+        "/usr/bin/python3",
+        "-B",
+        "shared/http-evidence/framing_review.py",
+        "compare",
+        "shared/http-evidence/observed-framing-unknown33.csv",
+        "shared/http-evidence/observed-framing-live33.csv",
+        "--limit",
+        "1"
+      ],
+      "exit_code": 1,
+      "expected_exit_code": 1,
+      "passed": true,
+      "stdout_bytes": 2627,
+      "stderr": ""
+    },
+    {
+      "name": "Empty window retains full difference verdict",
+      "command": [
+        "/usr/bin/python3",
+        "-B",
+        "shared/http-evidence/framing_review.py",
+        "compare",
+        "shared/http-evidence/observed-framing-unknown33.csv",
+        "shared/http-evidence/observed-framing-live33.csv",
+        "--offset",
+        "999"
+      ],
+      "exit_code": 1,
+      "expected_exit_code": 1,
+      "passed": true,
+      "stdout_bytes": 1212,
+      "stderr": ""
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "name": "The Patient Sieve",
+  "image": "https://api.imd.fun/artifacts/53159cf88cc6f5cd22a8d86d2043e2b8534a102bd0c35a86cbf631c106682918",
+  "attributes": [
+    {
+      "trait_type": "Cave",
+      "value": "Ice"
+    },
+    {
+      "trait_type": "Wall",
+      "value": "Gathering"
+    },
+    {
+      "trait_type": "Number",
+      "value": 33
+    },
+    {
+      "trait_type": "Left behind",
+      "value": "Framing Evidence Review"
+    },
+    {
+      "trait_type": "Meaning",
+      "value": "A small ochre sieve selects findings while keeping the whole story."
+    },
+    {
+      "trait_type": "One thing",
+      "value": "Gathering"
+    }
+  ]
+}

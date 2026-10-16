@@ -217,3 +217,22 @@ No line folder was modified.
 - Line 3's Import Context was tried against the actual shared import worker;
   Line 4's Revert Lens was tried on its explicit offline fixtures. Neither is
   required by this HTTP/CSV handoff. No line folder was changed.
+
+## Gathering 33 reuse
+
+- Copied Line 1's `framing-lens/framing_lens.py` byte-for-byte into
+  `http-evidence/framing_lens.py` after source review.
+- Copied Line 2's `csv-slice/slice.py` into `http-evidence/review_slice.py`,
+  adapting only its engine path to the existing sibling `reconcile.py`.
+- Added `http-evidence/framing_review.py`: saved response framing becomes
+  URL/hop-keyed CSV, then exact differences become review windows retaining
+  global schema, equality and ambiguity. Reused the existing Payload Contract
+  URL validator and the unchanged exact reconciler. Eight new checks pass.
+- Kept the old public capture's missing framing fields as unknown; a separate
+  bounded public GET passed HTTP 200/JSON/126,226-byte length checks. The two
+  newer framing captures compare differently only in their report hashes.
+- Tried Line 3's External Import inventory on the actual shared import worker
+  (27 modules, 18 external roots, 156 sites) and Line 4's Event Lens on its
+  explicitly constructed offline fixtures. Standard-library names are not
+  installation requirements; decoded fixtures are not observed transfers.
+- No line folder, record, goal or configuration changed. No dependency added.

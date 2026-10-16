@@ -1,0 +1,2 @@
+url,hop,overall_outcome,source_ok,status,outcome,mode,capture_complete,declared_bytes,body_bytes,findings,report_sha256
+https://api.imd.fun/launches,0,unknown,true,200,unknown,unknown,,,126215,"[{""code"":""missing_headers"",""detail"":""Capture predates framing header evidence; absence cannot be inferred."",""state"":""unknown""}]",ca03ba18a3dd5cc514a3d128c2daa70008728ba3f5d9bdff239f6e1448266ed3

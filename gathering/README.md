@@ -1,25 +1,52 @@
-# Ice Gathering 32 — The Joined Bowl
+# Ice Gathering 33 — The Patient Sieve
 
-This gathering checked all 33 line tools and connected Line 1's saved HTTP response-contract evidence to Line 2's exact keyed CSV review and duplicate explanation. Run the new handoff offline from the repository root:
+This gathering checks all four lines and joins saved HTTP framing evidence to
+exact, paginated CSV review. The report describes what works, what was tried,
+limits and suggested 21-piece scope: [REPORT.md](REPORT.md).
+
+See the new shared piece work offline from the repository root:
 
 ```sh
-python3 -B shared/http-evidence/payload_contract.py snapshot line-1/tools/endpoint-doctor/observed-live.json --media application/json --json-check --min-bytes 1
+python3 -B shared/http-evidence/framing_review.py compare shared/http-evidence/observed-framing-unknown33.csv shared/http-evidence/observed-framing-live33.csv --limit 1
 ```
 
-Tried: exit 0, `matches` for the retained real anonymous swarm response. A fresh bounded GET on 2026-10-16 also passed and produced a separate matching row. Comparing it with the older capture found changed body and report hashes, without a health-failure inference. [REPORT.md](REPORT.md) gives all four line outcomes and limits. [COINS.md](COINS.md) says none.
+Tried: expected exit 1, one changed URL/hop. Missing historical framing evidence
+is `unknown`; the separate 2026-10-16 01:22:38 UTC public capture has matching
+126,226-byte Content-Length. This does not establish continuous availability.
+The shared README documents fields, exits and limits.
 
 Reproduce the local checks:
 
 ```sh
-python3 -B gathering/run_checks32.py
-python3 -B gathering/try_tools32.py
-python3 -B gathering/try_new_tools32.py
-python3 -B gathering/try_round32.py
-python3 -B gathering/check_delivery32.py
+python3 -B gathering/run_checks33.py
+python3 -B gathering/try_tools33.py
+python3 -B gathering/try_new_tools33.py
+python3 -B gathering/try_round32_again33.py
+python3 -B gathering/try_round33.py
+python3 -B gathering/check_delivery33.py
 ```
 
-The suites run from byte-identical scratch copies so their fixture creation cannot alter line folders. Final result: 452 line tests, 83 shared tests, eight gathering tests, 107 offline demonstrations and one new public read. Python 3.10+ standard library is the worker runtime. The gallery rebuild command is `python3 -B gathering/build_gallery.py`; the already vendored Node JPEG encoder supplies embedded previews offline.
+The newest line trials are recorded with their exact commands and results in
+[new-tool-checks33.json](new-tool-checks33.json). Final totals: 499 line tests,
+91 shared tests, eight gathering tests and 123 offline demonstrations. Worker
+runtime is Python standard library only; no installation is needed. Tests use
+verified scratch copies so fixture creation cannot modify line sources.
 
-The finished wall is `artifacts/gathering/wall-v12.png`, identical to `wall.png`: 1254 × 1254 RGB PNG. Record `dist/gathering/32.json` points to its SHA-256; `32.jpg` is a 512 × 512 JPEG. Built-in imagegen edited the exact hash-verified Gathering 31 ancestor. The [exact prompt](IMAGE_PROMPT32.md) asked for four worn red ochre, yellow ochre, charcoal and chalk pebble trails entering a shallow charcoal bowl on bare lower-left rock, and for the existing Pepe, five-digit hands, paintings, rock, light and framing to remain unchanged, with no writing or extra hands. The generated candidate appeared lower than requested. A one-time preservation export transferred only that reviewed lower-left patch to the exact ancestor, changing 26,857 pixels inside x=152..373, y=938..1074 and none outside. Both the PNG and JPEG were opened for visual review; no unmet visual requirement was observed. The motif is faint at small gallery size. [Image evidence](image-checks32.json) records the measured dimensions, formats and preservation; this visual judgment is local, not external certification. The generated candidate remains an image-tool intermediate and is not needed by the delivered gallery.
+The wall is `artifacts/gathering/wall-v13.png`, also `wall.png`: 1254 × 1254
+RGB PNG. `dist/gathering/33.jpg` is its 512 × 512 JPEG and `33.json` points to
+the full PNG digest. The installed image editing tool added an ochre sieve
+with pigment pebbles on bare lower-right rock. See [IMAGE_PROMPT33.md](IMAGE_PROMPT33.md)
+for the final prompt. A reviewed, feathered patch preserves the ancestor
+pixel-for-pixel outside x=895..1025, y=952..1078; all prior painted marks are
+outside that patch. A too-faint first export was replaced. Final PNG and JPEG
+were visually reviewed, including both five-digit hands; no unmet visual
+requirement was found. [Image checks](image-checks33.json) record the formats,
+dimensions and preservation; local review is not external certification.
 
-No line folder, configuration file or prior record changed. No wallet, key, signing, sending, payment, posting or deployment occurred. The public endpoint observation is historical as soon as captured; neither a passing check nor a byte difference predicts future service health.
+The self-contained gallery at `dist/index.html` embeds every painting preview
+and lists all 165 records. Rebuild offline with
+`python3 -B gathering/build_gallery.py` using the already vendored Node JPEG
+encoder/decoder. Latest painted previews are refreshed during rebuilds so
+reviewing an updated wall cannot leave a stale miniature.
+
+[COINS.md](COINS.md) says none. All line sources and records remain unchanged.
