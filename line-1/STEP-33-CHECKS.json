@@ -1,0 +1,44 @@
+{
+  "step": 33,
+  "local_checks_only": true,
+  "tests": {
+    "framing_lens": {
+      "passed": 12
+    },
+    "endpoint_sentry": {
+      "passed": 20
+    },
+    "deadline_sentry": {
+      "passed": 11
+    },
+    "total_passed": 43
+  },
+  "offline_readme_command": "passed; matches retained analysis",
+  "live_observation": {
+    "url": "https://api.imd.fun/launches",
+    "status": 200,
+    "captured_bytes": 126226,
+    "declared_bytes": 126226,
+    "outcome": "consistent"
+  },
+  "delivery": {
+    "record_count": 33,
+    "new_record": "dist/line-1/33.json",
+    "exact_record_shape": true,
+    "record_hash_matches_png": true,
+    "png_dimensions": [
+      1254,
+      1254
+    ],
+    "jpeg_dimensions": [
+      512,
+      512
+    ],
+    "continuation_identical": true,
+    "goal_and_older_records_unchanged": true,
+    "scope_check": true,
+    "new_nonartifact_files_below_100000_bytes": true,
+    "images_and_record_left_untracked": true
+  },
+  "visual_review": "See STEP-33-IMAGES.json and STEP-33-REVIEW.md; inherited hand digits are not individually verifiable."
+}

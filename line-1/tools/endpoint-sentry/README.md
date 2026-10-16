@@ -66,3 +66,8 @@ Cache-Control, Date, Age, Expires, Vary, ETag and Last-Modified are retained;
 Set-Cookie and other arbitrary headers are omitted. No body, request or success
 check changed. Existing consumers may ignore these additive fields. The suite
 now has 18 passing tests, including allowlist and timestamp capture.
+
+Step 33 adds ordered `framing_headers` pairs containing only Content-Length and
+Transfer-Encoding, including duplicate fields and explicit absence. The offline
+[Framing Lens](../framing-lens/README.md) interprets these independently of the
+producer's existing body/status/JSON checks. No request or success behavior changed.

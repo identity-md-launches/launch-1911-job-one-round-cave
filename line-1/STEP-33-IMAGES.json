@@ -1,0 +1,52 @@
+{
+  "ancestor_sha256": "df0a7ff06cf169d8a2b2d5d4b9048a04ebe35d3f57707723e1fc1b6c58ea22bf",
+  "generated_sha256": "8d901b5c4f6828e69259f5ab347f12ba34c02b1b8a3d79b73f794fa05f6d9da0",
+  "png": {
+    "path": "artifacts/line-1/wall-v13.png",
+    "format": "PNG",
+    "mode": "RGB",
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "bytes": 4020747,
+    "sha256": "50061b113c28df15c5deb0a1e2df2fb1777886b49133b1613d5f2b444ae016c7"
+  },
+  "jpeg": {
+    "path": "dist/line-1/33.jpg",
+    "format": "JPEG",
+    "dimensions": [
+      512,
+      512
+    ],
+    "bytes": 63565
+  },
+  "preservation": {
+    "source_rectangle": [
+      309,
+      431,
+      442,
+      468
+    ],
+    "rectangle": [
+      309,
+      431,
+      442,
+      468
+    ],
+    "changed_pixels": 1381,
+    "changed_bounds": [
+      310,
+      432,
+      441,
+      467
+    ],
+    "outside_rectangle_changed_pixels": 0
+  },
+  "model": "installed image edit tool",
+  "visual_review_required": false,
+  "unmet_visual_requirements": [
+    "Five digits cannot be individually verified in inherited simplified hands; no hands were added or altered."
+  ],
+  "visual_review_completed": true
+}

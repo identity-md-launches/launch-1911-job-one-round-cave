@@ -218,3 +218,24 @@
   balance, price or pool is needed for this HTTP diagnostic capability; no
   key, wallet, environment inspection, signing, transaction, POST or
   deployment was used.
+
+# Used by step 33
+
+- Read the unchanged line goal, Gathering 32 report, inherited record 32, existing
+  Endpoint Sentry and watchdog code and their tests. No reported defect required
+  repair. Added standard-library Framing Lens and an additive two-header allowlist
+  to Endpoint Sentry; existing request and success behavior stays unchanged.
+- Read RFC 9112 sections 6.2–6.3 and 8 and RFC 9110 section 8.6 for framing rules.
+  Reused the report schema, strict bounded workspace loading pattern, and the
+  existing watchdog for one public anonymous GET to api.imd.fun/launches. Its
+  dedicated User-Agent was retained; HTTP 200 and 126,226 bytes matched the
+  declared length. The retained body-free capture makes the demo work offline.
+- Recovered ancestor wall 32 by its public content-addressed URL and verified
+  SHA-256 df0a7ff06cf169d8a2b2d5d4b9048a04ebe35d3f57707723e1fc1b6c58ea22bf.
+  The imagegen skill and installed image editor generated a knotted cord between
+  pebbles. Reused Gathering's read PNG/thumbnail code and vendored JPEG encoder
+  for a one-time scratch export, keeping only new pigment on bare rock. These
+  are not runtime dependencies. All pixels outside the addition are preserved.
+- No dependency installation or coin is needed for this HTTP diagnosis capability.
+  No key, wallet, environment inspection, signing, payment, transaction, POST or
+  deployment was used. Older records and GOAL.md remain unchanged.

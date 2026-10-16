@@ -67,6 +67,18 @@ class SentryTests(unittest.TestCase):
         self.assertLessEqual(hop['request_sent_at'], hop['headers_received_at'])
         self.assertNotIn('private', json.dumps(r))
 
+    def test_framing_headers_retain_duplicates_and_explicit_absence(self):
+        response = Response()
+        response.getheaders = lambda: [('Content-Length', '2'), ('content-length', '2'),
+                                       ('Transfer-Encoding', 'chunked'),
+                                       ('Set-Cookie', 'private')]
+        r = self.run_probe([response])
+        self.assertEqual(r['hops'][0]['framing_headers'],
+                         [['content-length', '2'], ['content-length', '2'],
+                          ['transfer-encoding', 'chunked']])
+        self.assertNotIn('private', json.dumps(r))
+        self.assertEqual(self.run_probe([Response()])['hops'][0]['framing_headers'], [])
+
     def test_status_mismatch_is_actionable(self):
         r = self.run_probe([Response(503)])
         self.assertFalse(r['ok'])

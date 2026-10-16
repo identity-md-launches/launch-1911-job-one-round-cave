@@ -39,3 +39,7 @@ captured Retry-After hints, with explicit evaluation times and unknown outcomes
 for ambiguous values. Endpoint Sentry now retains this one response header,
 including duplicate fields and explicit absence. See
 [the step review](STEP-30-REVIEW.md) for checks and the preserved wall.
+
+[Framing Lens](tools/framing-lens/README.md) explains promised body length,
+conflicting framing headers, and incomplete capture evidence. Its offline demo
+uses a real swarm response; see [step 33](STEP-33-REVIEW.md).

@@ -1,0 +1,29 @@
+{
+  "schema": "framing-lens/v1",
+  "outcome": "consistent",
+  "hops": [
+    {
+      "evidence": "/probe/hops/0",
+      "status": 200,
+      "outcome": "consistent",
+      "mode": "content-length",
+      "findings": [
+        {
+          "code": "length_match",
+          "state": "consistent",
+          "detail": "Captured bytes equal declared length."
+        }
+      ],
+      "declared_bytes": 126226,
+      "capture_complete": true
+    }
+  ],
+  "limits": [
+    "Saved GET evidence is unauthenticated and historical.",
+    "HTTP library parsing is not a raw wire audit; chunk terminators and trailers are not retained.",
+    "Matching length does not prove payload correctness or endpoint health.",
+    "No network, retries, body reads or repairs are performed."
+  ],
+  "source_ok": true,
+  "source_sha256": "fa76bcfa1d0992fb1bc9ddaa6df317f2e8e6b30323bfc2da63d81d22aa5fa1d1"
+}
